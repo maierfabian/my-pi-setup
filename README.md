@@ -1,6 +1,5 @@
-# Fabian's Pi Setup
+# Pi Setup
 
-Personal configuration for [Pi Coding Agent](https://pi.dev).
 
 ## Included
 
