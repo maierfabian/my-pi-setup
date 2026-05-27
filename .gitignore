@@ -1,0 +1,18 @@
+# Secrets / auth
+.env
+auth.json
+
+# Pi runtime state
+sessions/
+bin/
+npm/
+git/
+*.log
+
+# Dependency installs
+node_modules/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
