@@ -1,8 +1,12 @@
 {
-  "lastChangelogVersion": "0.75.5",
+  "lastChangelogVersion": "0.77.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.5",
   "defaultThinkingLevel": "medium",
   "theme": "strave-dark",
-  "quietStartup": true
+  "quietStartup": true,
+  "hideThinkingBlock": true,
+  "enabledModels": [
+    "openai-codex/gpt-5.5"
+  ]
 }

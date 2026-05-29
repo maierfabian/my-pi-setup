@@ -94,12 +94,13 @@ export default function (pi: ExtensionAPI) {
 
 		const theme = ctx.ui.theme;
 		const icon = theme.fg("success", "✓");
-		const tpsLabel = tps > 0
-			? theme.fg("accent", `${tps} tok/s`)
-			: theme.fg("dim", "N/A");
-		const detail = theme.fg("dim", `${totalOutputTokens} tokens in ${elapsed.toFixed(1)}s streaming`);
+		const tpsText = tps > 0 ? `${tps} tok/s` : "N/A";
+		const summary = theme.fg(
+			"dim",
+			`${tpsText}  ${totalOutputTokens} tokens in ${elapsed.toFixed(1)}s streaming`,
+		);
 
-		ctx.ui.notify(`${icon} ${tpsLabel}  ${detail}`, "info");
-		ctx.ui.setStatus("tps", theme.fg("dim", `done — ${tpsLabel}`));
+		ctx.ui.notify(`${icon} ${summary}`, "info");
+		ctx.ui.setStatus("tps", theme.fg("dim", `done — ${tpsText}`));
 	});
 }
