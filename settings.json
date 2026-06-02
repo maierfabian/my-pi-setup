@@ -1,12 +1,16 @@
 {
-  "lastChangelogVersion": "0.77.0",
+  "lastChangelogVersion": "0.78.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.5",
-  "defaultThinkingLevel": "medium",
+  "defaultThinkingLevel": "xhigh",
   "theme": "strave-dark",
   "quietStartup": true,
   "hideThinkingBlock": true,
   "enabledModels": [
     "openai-codex/gpt-5.5"
+  ],
+  "packages": [
+    "npm:pi-subagents",
+    "git:github.com/tmustier/pi-extensions"
   ]
 }
